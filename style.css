@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+:root {
+    --bg-color-1: #f44336;
+    --bg-color-2: #730228;
+    --bg: rgba(255, 255, 255, 0.7)
+}
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(var(--bg-color-1), var(--bg-color-2));
+    width: 100%;
+}
+#container {
+    width: 350px;
+    max-width: 90%;
+}
+#container > div {
+    border-radius: 5px;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+}
+#selectOptions {
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    background: var(--bg);
+    padding: 10px 1rem;
+}
+#selectOptions img {
+    width: 10px;
+}
+.options {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    background: var(--bg);
+    overflow: hidden;
+}
+.options > div  {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+.option > a {
+    display: flex;
+    padding: 12px 1rem;
+    width: 100%;
+}
+.option {
+    cursor: pointer;
+    background-color: none;
+}
+.option img {
+    width: 20px;
+}
+.option p {
+    margin-left: 10px;
+}
+.option:hover {
+    background-color: rgba(255, 255, 255);
+}
+.hide {
+    visibility: hidden;
+}
+footer {
+    position: absolute;
+    bottom: 15px;
+    background-color: white;
+    border: 3px solid white;
+    padding: 7px 15px 7px 15px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: .4s ease-in-out all;
+    margin-top: 20px;
+    max-width: 90%;
+    font-weight: 600;
+}
+footer:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+a {
+    text-decoration: none;
+    font-size: 14px;
+    color: black;
+}
+#twitter {
+    width: 18px;
+    height: 20px;
+}
+.whatsapp, .github {
+    font-size: 20px;
+}
